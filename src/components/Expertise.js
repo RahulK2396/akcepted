@@ -103,41 +103,38 @@ function Expertise() {
         </TimelineItem>
       </Timeline>
       <div className="mobile-expertise">
-
-      <h3>Akcepted</h3>
+        <h3>Akcepted</h3>
         <div className="mobile-expertise-position">
           <h5>Software Developer</h5>
           <h5>July'24-Present</h5>
-          
         </div>
         <ul>
-        <li>
-        Currently gaining hands-on experience in software development, enhancing skills in frontend technologies like ReactJS and Material UI.
-        </li>
-        <li>
-        Contributing to various projects, collaborating with the team to implement efficient and effective solutions.
-        </li>
-      </ul>
+          <li>
+            Currently gaining hands-on experience in software development,
+            enhancing skills in frontend technologies like ReactJS and Material
+            UI.
+          </li>
+          <li>
+            Contributing to various projects, collaborating with the team to
+            implement efficient and effective solutions.
+          </li>
+        </ul>
 
-
-
-      <h3>NeoSpace</h3>
+        <h3>NeoSpace</h3>
         <div className="mobile-expertise-position">
           <h5>Software Developer</h5>
           <h5>Jan'24-Jun'24</h5>
-          
         </div>
         <ul>
-        <li>
-        Executed various web development tasks encompassing frontend
-        and backend responsibilities.
-        </li>
-        <li>
-        Stayed updated with emerging technologies and industry trends
-        to continuously enhance development practices
-        </li>
-      </ul>
-
+          <li>
+            Executed various web development tasks encompassing frontend and
+            backend responsibilities.
+          </li>
+          <li>
+            Stayed updated with emerging technologies and industry trends to
+            continuously enhance development practices
+          </li>
+        </ul>
 
         <h3>WebSoulLabs</h3>
         <div className="mobile-expertise-position">
@@ -145,19 +142,18 @@ function Expertise() {
           <h5>May'23-Nov'23</h5>
         </div>
         <ul>
-        <li>
-          Engineered and maintained Git version control system, ensuring accurate
-          tracking of code changes and facilitating seamless integration of
-          front-end components with server-side logic. 
-        </li>
-        <li>
-          Played a key role in developing and maintaining web applications,
-          incorporating the latest technologies and ensuring optimal
-          performance
-        </li>
-      </ul>
+          <li>
+            Engineered and maintained Git version control system, ensuring
+            accurate tracking of code changes and facilitating seamless
+            integration of front-end components with server-side logic.
+          </li>
+          <li>
+            Played a key role in developing and maintaining web applications,
+            incorporating the latest technologies and ensuring optimal
+            performance
+          </li>
+        </ul>
       </div>
-      
     </div>
   );
 }

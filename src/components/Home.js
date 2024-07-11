@@ -37,7 +37,9 @@ function Home() {
             performance. Currently Pursuuing BCA at IGNOU, Distant Education.
           </p>
           <div className="buttonGroup">
+            <a href="https://docs.google.com/document/d/17Q9TVsk0Xt4P7G3s0l7PiyHo4wcKmGYr8w6HBfpSYCE/edit?usp=sharing" target="_blank">
             <button>Resume</button>
+            </a>
           </div>
         </div>
         <div className="SideImg">

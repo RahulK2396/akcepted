@@ -330,6 +330,9 @@ body, html {
     color: #00ff80;
 
   }
+  .validation-message{
+    color: red;
+  }
   
 
 
@@ -405,6 +408,9 @@ body, html {
 }
 
 @media (max-width: 480px) {
+  .css-1oa1nt {
+    display: none;
+  }
   .HomeContent {
     padding: 20px;
   }
