@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import "../Assests/styles.css";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "../Assests/styles.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const [validationMessage, setValidationMessage] = useState("");
@@ -19,28 +19,32 @@ function Contact() {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
-  const handleSubmit = () => {
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const { name, email, message } = formData;
-
+    console.log(name, email, message);
     // Simple validation
-    if (!name || !email || !message) {
-      setValidationMessage("All fields are required.");
-      return;
-    }
-
-    if (!/\S+@\S+\.\S+/.test(email)) {
+    if (!name) {
+      setValidationMessage("Name is  required.");
+    } else if (!email) {
+      setValidationMessage("Email is required.");
+    } else if (!message) {
+      setValidationMessage("Message is required.");
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       setValidationMessage("Please enter a valid email address.");
-      return;
+    } else {
+      setValidationMessage("Message sent successfully.");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      })
     }
 
-    // Clear validation message and proceed with form submission
-    // setValidationMessage("");
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
   };
 
@@ -76,7 +80,11 @@ function Contact() {
 
           <div className="contact-item">
             <GitHubIcon className="icon" />
-            <a href="https://github.com/RahulK2396" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/RahulK2396"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </a>
           </div>
@@ -84,7 +92,11 @@ function Contact() {
 
           <div className="contact-item">
             <LinkedInIcon className="icon" />
-            <a href="https://www.linkedin.com/in/rahul-k-42742b136/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/rahul-k-42742b136/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </a>
           </div>
@@ -114,9 +126,14 @@ function Contact() {
             value={formData.message}
             onChange={handleChange}
           ></textarea>
-          <button onClick={handleSubmit} type="submit">Send</button>
+          {validationMessage && (
+          <p className="validation-message">{validationMessage}</p>
+        )}
+          <button onClick={handleSubmit} type="submit">
+            Send
+          </button>
         </form>
-        {validationMessage && <p className="validation-message">{validationMessage}</p>}
+        
       </div>
     </div>
   );

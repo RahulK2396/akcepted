@@ -29,16 +29,18 @@ function Home() {
             </span>
           </h2>
           <p className="heroline">
-            Experienced Full-Stack Developer with one year of expertise in
-            ReactJS, Redux, Node.js, and Express, adept at building responsive
+           One year of Experienced Full-Stack Developer with 
+            ReactJS, Redux, Node.js, and Express, adapt at building responsive
             web applications and implementing robust backend solutions. Skilled
             in collaborating with teams to deliver high-quality software
             products while adhering to best practices and ensuring optimal
-            performance. Currently Pursuuing BCA at IGNOU, Distant Education.
+            performance. Currently Pursuing BCA at IGNOU, Distant Education.
           </p>
           <div className="buttonGroup">
-            <a href="https://docs.google.com/document/d/17Q9TVsk0Xt4P7G3s0l7PiyHo4wcKmGYr8w6HBfpSYCE/edit?usp=sharing" target="_blank">
-            <button>Resume</button>
+            <a href="https://drive.google.com/file/d/14xWbsA6bjAsqnDGpFPQKo9DwA9BnuzVd/view?usp=drive_link" target="_blank">
+            <button>Resume
+              
+            </button>
             </a>
           </div>
         </div>

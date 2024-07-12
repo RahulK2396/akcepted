@@ -48,7 +48,7 @@ function Projects() {
           </li>
         </ul>
       </div>
-      <div className="service">
+      {/* <div className="service">
         <div className="service-icon">
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -68,7 +68,7 @@ function Projects() {
             understand project requirements and deliver efficient solutions.
           </li>
         </ul>
-      </div>
+      </div> */}
       </div>
     </div>
   );

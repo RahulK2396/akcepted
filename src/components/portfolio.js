@@ -71,9 +71,10 @@ const Portfolio = () => {
         </ul>
       </aside>
       <Swiper
-        ref={swiperRef}
+     ref={swiperRef}
         effect={"cube"}
-        grabCursor={true}
+        grabCursor={false}
+        allowTouchMove={false}
         cubeEffect={{
           // shadow: true,
           // slideShadows: true,

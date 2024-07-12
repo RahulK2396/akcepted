@@ -39,7 +39,7 @@ function Expertise() {
             <Typography></Typography>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem>
+        {/* <TimelineItem>
           <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
             January 2024 - June 2024
           </TimelineOppositeContent>
@@ -67,10 +67,10 @@ function Expertise() {
               </ul>
             </Typography>
           </TimelineContent>
-        </TimelineItem>
+        </TimelineItem> */}
         <TimelineItem>
           <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body2">
-            May 2023 - November 2023
+            May 2023 - June 2024
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -120,7 +120,7 @@ function Expertise() {
           </li>
         </ul>
 
-        <h3>NeoSpace</h3>
+        {/* <h3>NeoSpace</h3>
         <div className="mobile-expertise-position">
           <h5>Software Developer</h5>
           <h5>Jan'24-Jun'24</h5>
@@ -134,12 +134,12 @@ function Expertise() {
             Stayed updated with emerging technologies and industry trends to
             continuously enhance development practices
           </li>
-        </ul>
+        </ul> */}
 
         <h3>WebSoulLabs</h3>
         <div className="mobile-expertise-position">
           <h5>Full Stack Developer</h5>
-          <h5>May'23-Nov'23</h5>
+          <h5>May'23-Jun'24</h5>
         </div>
         <ul>
           <li>
